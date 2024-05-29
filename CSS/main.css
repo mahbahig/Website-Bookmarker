@@ -1,0 +1,43 @@
+.bg-body {
+    background-color: #f7ecde !important;
+}
+
+.fs-50 {
+    font-size: 50px;
+}
+
+*::selection {
+    background-color: #fec260 !important;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+#main-title::before {
+    content: "";
+    background-color: #fec260;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height: 20px;
+    transition: all 250ms;
+}
+#main-title:hover::before {
+    height: 40px;
+}
+
+.border-top-dotted {
+    border-top: 2px black dotted !important;
+}
+.border-bottom-dotted {
+    border-bottom: 2px black dotted !important;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, #3ea55c, #b1ab49);
+    background-clip: text;
+    color: transparent;
+}
