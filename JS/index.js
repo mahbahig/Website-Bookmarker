@@ -62,10 +62,15 @@ function searchBookmarks() {
             displayBookmarks(matchingSearch)
         }
     }
+    clearSearch();
     if (matchingSearch.length == 0) {
         htmlCode = `<tr class="py-2">
                         <td class="text-center align-middle" colspan="4" ><h2 class="text-black text-center">None</h2></td>
                     </tr>`;
         document.getElementById('bookmarkContainer').innerHTML = htmlCode;
     }
+}
+
+function clearSearch() {
+    searchInput.value = '';
 }
